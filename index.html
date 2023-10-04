@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Janessa Groves">
+        <meta name="description" content="">
+        <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+        
+        <!-- THIS IS WHERE I WOULD PUT TWITTER AND OPEN GRAPH INFORMATION -->
+        
+        <!-- LINKS -->
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+        <link rel="icon" href="">
+        <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+        <title>Poké Mart</title>
+    </head>
+    <body>
+        <div id="hero">
+            <a id="skip" href="#main-content">Skip to Main Content</a>
+            <header>
+                <img src="/images/logo.png" id="logo" alt="Poké Mart's logo is a blue outline of a Pokéball">
+                <h1>Poké Mart</h1>
+        </div>
+                <div id="sidebar">
+                    <div id="darkMode"><span>Dark Mode</span>
+                        <!-- SVGs FROM https://tablericons.com/ --> 
+                        <div id="DMoff">
+                            <span class="sr-only">Dark Mode Off</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pokeball-off" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M20.04 16.048a9 9 0 0 0 -12.083 -12.09m-2.32 1.678a9 9 0 1 0 12.737 12.719" />
+                                <path d="M9.884 9.874a3 3 0 1 0 4.24 4.246m.57 -3.441a3.012 3.012 0 0 0 -1.41 -1.39" />
+                                <path d="M3 12h6m7 0h5" />
+                                <path d="M3 3l18 18" />
+                            </svg>
+                        </div>
+                        <div id="DMon">
+                            <span class="sr-only">Dark Mode On</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pokeball" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M3 12h6" />
+                                <path d="M15 12h6" />
+                            </svg>
+                        </div>
+                    </div>
+                    <nav>
+                        <h2 class="sr-only">Main Navigation</h2>
+                        <ul>
+                            <li class="active"><a href="#main-content">Home</a></li>
+                            <li><a href="#pokeballs">Pokéballs</a></li>
+                            <li><a href="#medicine">Medicine</a></li>
+                            <li><a href="#evolution">Evolution</a></li>
+                            <li><a href="#contactUs">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div id="shoppingBag">
+                        <img src="/images/bag.png" alt="white icon for Poké Mart shopping bag">
+                        <h3>Bag</h3>
+                        <div class="shoppingList"></div>
+                        <div class="itemCard"></div>
+                    </div>
+                </div>
+        </header>
+
+        <div id="wrapper">
+        <main id="main-content">
+            <section id="intro">
+                <h2>Welcome to Poké Mart!</h2>
+                    <p>Your favorite online shop for all Pokémon training essentials!</p>
+                    <p>As an experienced Pokémon trainer, you know the importance of being well-equipped. That's why we offer a huge selection of the most effective Pokéballs, medicine, and evolution items.</p>
+                    <p>Browse our virtual shelves to find a wide selection of high-quality, battle-tested products ready for fast shipping. We're here to help you catch, heal, and train your Pokemon for victory against any opponent.</p>
+                    <p>Stock up on standard Pokéballs or specialized balls, so you can capture new team memebers. Revive fallen Pokémon with our Max Revives. Heal HP damage with our various potions. Ready to evolve that special Pokémon? We have a wide array of evolution items available to help your Pokémon reach their final form!</p> 
+                    <p>Here at Poké Mart, we provide the necessities, so you can focus on training. Check out our ever-expanding inventory to find the items that will take your Pokémon team to the next level. Let us help you and your Pokémon become the best like no one ever was!</p>
+            </section>
+
+            <section id="shop">
+                <h2>Shop</h2>
+
+                
+                <section id="pokeballs">
+                    <h3>Pokéballs</h3>    
+                    <div class="balls" id="pokeBall">
+                        <img src="/images/pokeballs/Pokeball.png" alt="">
+                        <h4>Pokéball</h4>
+                        <img src="/images/PokeCoin.png" alt="Pikachu on a gold coin representing Pokémon currency" class="coins">
+                        <p>100</p>
+                        <button aria-pressed="false" aria-label="Add to cart">Add to Cart</button>
+                    </div>
+                    
+                    <div class="balls" id="greatBall">
+                        <img src="/images/pokeballs/GreatBall.png" alt="">
+                        <h4>Great Ball</h4>
+                        <img src="/images/PokeCoin.png" alt="Pikachu on a gold coin representing Pokémon currency" class="coins">
+                        <p>500</p>
+                        <button aria-pressed="false" aria-label="Add to cart">Add to Cart</button> 
+                    </div>
+
+                    <div class="balls" id="ultraBall">
+                        <img src="/images/pokeballs/UltraBall.png" alt="">
+                        <h4>Ultra Ball</h4>
+                        <img src="/images/PokeCoin.png" alt="Pikachu on a gold coin representing Pokémon currency" class="coins">
+                        <p>1000</p>
+                        <button aria-pressed="false" aria-label="Add to cart">Add to Cart</button> 
+                    </div>
+
+                    <div class="balls" id="masterBall">
+                        <img src="/images/pokeballs/MasterBall.png" alt="">
+                        <h4>Master Ball</h4>
+                        <img src="/images/PokeCoin.png" alt="Pikachu on a gold coin representing Pokémon currency" class="coins">
+                        <p>8000</p>
+                        <button aria-pressed="false" aria-label="Add to cart">Add to Cart</button> 
+                    </div>
+                    
+                    <div class="balls" id="premierBall">
+                        <img src="/images/pokeballs/PremierBall.png" alt="">
+                        <h4>Premier Ball</h4>
+                        <img src="/images/PokeCoin.png" alt="Pikachu on a gold coin representing Pokémon currency" class="coins">
+                        <p>200</p>
+                        <button aria-pressed="false" aria-label="Add to cart">Add to Cart</button> 
+                    </div>
+
+                    <div class="balls" id="beastBall">
+                        <img src="/images/pokeballs/BeastBall.png" alt="">
+                        <h4>Beast Ball</h4>
+                        <img src="/images/PokeCoin.png" alt="Pikachu on a gold coin representing Pokémon currency" class="coins">
+                        <p>800</p>
+                        <button aria-pressed="false" aria-label="Add to cart">Add to Cart</button> 
+                    </div>
+                </section>
+
+                <section id="medicine">
+                    <h3>Medicine</h3>
+                    <div class="meds" id="revive">
+                        <img src="/images/medicine/Revive.png" alt="">
+                        <h4>Revive</h4>
+                        <img src="/images/PokeCoin.png" alt="Pikachu on a gold coin representing Pokémon currency" class="coins">
+                        <p>400</p>
+                        <button aria-pressed="false" aria-label="Add to cart">Add to Cart</button> 
+                    </div>
+
+                    <div class="meds" id="maxRevive">
+                        <img src="/images/medicine/MaxRevive.png" alt="">
+                        <h4>Max Revive</h4>
+                        <img src="/images/PokeCoin.png" alt="Pikachu on a gold coin representing Pokémon currency" class="coins">
+                        <p>1000</p>
+                        <button aria-pressed="false" aria-label="Add to cart">Add to Cart</button> 
+                    </div>
+
+                    <div class="meds" id="potion">
+                        <img src="/images/medicine/Potion.png" alt="">
+                        <h4>Potion</h4>
+                        <img src="/images/PokeCoin.png" alt="Pikachu on a gold coin representing Pokémon currency" class="coins">
+                        <p>300</p>
+                        <button aria-pressed="false" aria-label="Add to cart">Add to Cart</button> 
+                    </div>
+
+                    <div class="meds" id="superPotion">
+                        <img src="/images/medicine/SuperPotion.png" alt="">
+                        <h4>Super Potion</h4>
+                        <img src="/images/PokeCoin.png" alt="Pikachu on a gold coin representing Pokémon currency" class="coins">
+                        <p>700</p>
+                        <button aria-pressed="false" aria-label="Add to cart">Add to Cart</button> 
+                    </div>
+
+                    <div class="meds" id="hyperPotion">
+                        <img src="/images/medicine/HyperPotion.png" alt="">
+                        <h4>Hyper Potion</h4>
+                        <img src="/images/PokeCoin.png" alt="Pikachu on a gold coin representing Pokémon currency" class="coins">
+                        <p>1200</p>
+                        <button aria-pressed="false" aria-label="Add to cart">Add to Cart</button> 
+                    </div>
+
+                    <div class="meds" id="maxPotion">
+                        <img src="/images/medicine/MaxPotion.png" alt="">
+                        <h4>Max Potion</h4>
+                        <img src="/images/PokeCoin.png" alt="Pikachu on a gold coin representing Pokémon currency" class="coins">
+                        <p>2000</p>
+                        <button aria-pressed="false" aria-label="Add to cart">Add to Cart</button> 
+                    </div>
+                </section>
+
+                <section id="evolution">
+                    <h3>Evolution</h3>
+                    <div class="evo" id="dragonScale">
+                        <img src="/images/evolution/DragonScale.png" alt="">
+                        <h4>Dragon Scale</h4>
+                        <img src="/images/PokeCoin.png" alt="Pikachu on a gold coin representing Pokémon currency" class="coins">
+                        <p>2500</p> 
+                        <button aria-pressed="false" aria-label="Add to cart">Add to Cart</button>
+                    </div>
+                    
+                    <div class="evo" id="kingsRock">
+                        <img src="/images/evolution/KingsRock.png" alt="">
+                        <h4>King's Rock</h4>
+                        <img src="/images/PokeCoin.png" alt="Pikachu on a gold coin representing Pokémon currency" class="coins">
+                        <p>2000</p> 
+                        <button aria-pressed="false" aria-label="Add to cart">Add to Cart</button>
+                    </div>
+
+                    <div class="evo" id="metalCoat">
+                        <img src="/images/evolution/MetalCoat.png" alt="">
+                        <h4>Metal Coat</h4>
+                        <img src="/images/PokeCoin.png" alt="Pikachu on a gold coin representing Pokémon currency" class="coins">
+                        <p>1500</p> 
+                        <button aria-pressed="false" aria-label="Add to cart">Add to Cart</button>
+                    </div>
+
+                    <div class="evo" id="sinnohStone">
+                        <img src="/images/evolution/SinnohStone.png" alt="">
+                        <h4>Sinnoh Stone</h4>
+                        <img src="/images/PokeCoin.png" alt="Pikachu on a gold coin representing Pokémon currency" class="coins">
+                        <p>3000</p> 
+                        <button aria-pressed="false" aria-label="Add to cart">Add to Cart</button>
+                    </div>
+
+                    <div class="evo" id="sunStone">
+                        <img src="/images/evolution/SunStone.png" alt="">
+                        <h4>Sun Stone</h4>
+                        <img src="/images/PokeCoin.png" alt="Pikachu on a gold coin representing Pokémon currency" class="coins">
+                        <p>1000</p> 
+                        <button aria-pressed="false" aria-label="Add to cart">Add to Cart</button>
+                    </div>
+
+                    <div class="evo" id="unovaStone">
+                        <img src="/images/evolution/UnovaStone.png" alt="">
+                        <h4>Unova Stone</h4>
+                        <img src="/images/PokeCoin.png" alt="Pikachu on a gold coin representing Pokémon currency" class="coins">
+                        <p>3000</p> 
+                        <button aria-pressed="false" aria-label="Add to cart">Add to Cart</button>
+                    </div>
+                </section>
+            </section>
+
+            <section id="contactUs">
+                <h2>Contact Us</h2>
+                <img src="/images/leaphereDragonite.png" alt="">
+                <section id="contactBlurb">
+                    <p>Got questions about our products or need help with an order? Our friendly Poké Mart staff is here to assist!</p>
+                    <p>We want to make sure you get the most out of your Poké Mart shopping experience. If you need assistance or have and concerns, there are a few easy ways to get in touch:</p>
+                    <ul>
+                        <li>Fill out the contact form on this page, and we'll get back to you shortly. Let us know in the message what you need help with.</li>
+                        <li>Give us a call. Our customer service team is availble <strong>8am-6pm Monday through Friday.</strong></li>
+                        <li>Reach out to use by email. We do our best to reply to all emails within 24 hours.</li>
+                        <li>Come see us in person! We'd love for you to stop by and check out our shop.</li>
+                    </ul>
+                    <p>No matter how you choose to contact us, our friendly and knowledge able staff will help resolve any issues. Let us know what we can do to improve your Poké Mart experience!</p>
+                </section>
+                <form method="" action="">
+                    <label for="fName">First Name<span class="required">*</span></label>
+                    <input type="text" name="fName" id="fName" autocomplete="given-name" placeholder="First Name" required>
+                    <label for="lName">Last Name<span class="required">*</span></label>
+                    <input type="text" name="lName" id="lName" autocomplete="family-name" placeholder="Last Name" required>
+                    <fieldset>
+                        <legend>Preferred Contact Method<span class="required">*</span></legend>
+                        <input id="prefEmail" type="radio" name="preferredContact" value="email" required checked>
+                        <label for="prefEmail">Email</label>
+                        <input id="prefText" type="radio" name="preferredContact" value="text">
+                        <label for="prefText">Phone</label>
+                        <input id="prefPhone" type="radio" name="preferredContact" value="phone" >
+                        <label for="prefPhone">Phone</label>
+                    </fieldset>
+                    <label for="email">Email Address<span class="required">*</span></label>
+                    <input type="email" name="email" id="email" autocomplete="email" placeholder="Email Address" required>
+                    <label for="phone">Phone Number <span id="phoneFormat">Format: (123)-456-7890</span><span class="required">*</span></label>
+                    <input type="tel" name="phone" id="phone" autocomplete="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone Number" required>
+                    <input type="submit" name="submit" id="submit" value="Submit">
+                </form>
+                <section id="contactInfo">
+                    <!-- SVGs FROM https://tablericons.com/ (AGAIN) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                        <path d="M3 7l9 6l9 -6" />
+                    </svg>
+                    <address>
+                        <a href="">support@pokemart.com</a><br>
+                    </address>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                    </svg>
+                    <address>
+                        <a href="tel:+18007653678">1-800-POKEMRT</a><br>
+                    </address>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                    </svg>
+                    <address>
+                        Poké Mart<br>
+                        54 Berry St<br>
+                        Pallet Town, Kanto Region 12345
+                    </address>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <section id="social">
+                <h2 class="sr-only">Social Media Links</h2> 
+                <!-- SVGs FROM https://tablericons.com/ -->
+                <ul>
+                    <li>
+                        <a href="https://twitter.com">
+                            <span class="sr-only">Twitter</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-x" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3399ff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                                <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://facebook.com">
+                            <span class="sr-only">Facebook</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3399ff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://instagram.com">
+                            <span class="sr-only">Instagram</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3399ff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M16.5 7.5l0 .01" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <small>Copyright &copy; 2023 Janessa Groves</small>
+            <small>This site is for educational purposes only.</small>
+            <small><a href="#">Terms of Service</a></small>
+        </footer>
+        </div>
+    </body>
+</html>
