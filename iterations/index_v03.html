@@ -12,7 +12,7 @@
         <!-- LINKS -->
         <link rel="stylesheet" href="styles.css">
         <script src="script.js" defer></script>
-        <link rel="icon" href="images/favicon.png">
+        <link rel="icon" href="">
         <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
 
         <!-- GOOGLE FONTS -->
@@ -62,7 +62,7 @@
                     <nav>
                         <h2 class="sr-only">Main Navigation</h2>
                         <ul>
-                            <li><a href="#logo">Home</a></li>
+                            <li><a href="#mainContent">Home</a></li>
                             <li><a href="#pokeballs">Pokéballs</a></li>
                             <li><a href="#medicine">Medicine</a></li>
                             <li><a href="#evolution">Evolution</a></li>
@@ -80,6 +80,16 @@
                                     <div class="cartProductImg"><img src="images/pokeballs/Pokeball.png"></div>  
                                     <div class="cartItemPrice"><p>100</p></div>  
                             </div>
+                            <div class="itemCard">
+                                <div class="cartProductName"><p>Pokéball</p></div>
+                                <div class="cartProductImg"><img src="images/pokeballs/Pokeball.png"></div>  
+                                <div class="cartItemPrice"><p>100</p></div>  
+                        </div>
+                        <div class="itemCard">
+                            <div class="cartProductName"><p>Pokéball</p></div>
+                            <div class="cartProductImg"><img src="images/pokeballs/Pokeball.png"></div>  
+                            <div class="cartItemPrice"><p>100</p></div>  
+                        </div>
                         </div>
                     </section>
                     <section class="checkout">
@@ -280,35 +290,24 @@
                     </ul>
                     <p>No matter how you choose to contact us, our friendly and knowledge able staff will help resolve any issues. Let us know what we can do to improve your Poké Mart experience!</p>
                 </section>
-                <form id="contactForm">
-                    <!-- <div id="formFields"> -->
-                        <label for="fName">First Name<span class="required">*</span></label>
-                        <span class="errorMessage">Please enter your first name.</span>
-                        <input type="text" name="fName" id="fName" autocomplete="given-name" placeholder="First Name">
-                        <label for="lName">Last Name<span class="required">*</span></label>
-                        <span class="errorMessage">Please enter your last name.</span>
-                        <input type="text" name="lName" id="lName" autocomplete="family-name" placeholder="Last Name">
-                        <fieldset>
-                            <legend>Preferred Contact Method<span class="required">*</span></legend>
-                            <input id="prefEmail" type="radio" name="preferredContact" value="email" checked>
-                            <label for="prefEmail">Email</label>
-                            <input id="prefText" type="radio" name="preferredContact" value="text">
-                            <label for="prefText">Text</label>
-                            <input id="prefPhone" type="radio" name="preferredContact" value="phone" >
-                            <label for="prefPhone">Phone</label>
-                        </fieldset>
-                        <label for="email">Email Address</label>
-                        <span class="errorMessage">Please enter a valid email.</span>
-                        <input type="email" name="email" id="email" placeholder="Email Address">
-                        <label for="phone">Phone Number <span id="phoneFormat">(123)456-7890</span></label>
-                        <span class="errorMessage">Please enter a phone number in request format.</span>
-                        <input type="tel" name="phone" id="phone" placeholder="Phone Number">
-                    <!-- </div> -->
-                    <!-- <div id="messageField"> -->
-                        <label for="message">Message<span class="required">*</span></label>
-                        <span class="errorMessage">Please tell us how we can help.</span>
-                        <input type="textarea" name="message" id="message" >
-                    <!-- </div> -->
+                <form method="" action="">
+                    <label for="fName">First Name<span class="required">*</span></label>
+                    <input type="text" name="fName" id="fName" autocomplete="given-name" placeholder="First Name" required>
+                    <label for="lName">Last Name<span class="required">*</span></label>
+                    <input type="text" name="lName" id="lName" autocomplete="family-name" placeholder="Last Name" required>
+                    <fieldset>
+                        <legend>Preferred Contact Method<span class="required">*</span></legend>
+                        <input id="prefEmail" type="radio" name="preferredContact" value="email" required checked>
+                        <label for="prefEmail">Email</label>
+                        <input id="prefText" type="radio" name="preferredContact" value="text">
+                        <label for="prefText">Text</label>
+                        <input id="prefPhone" type="radio" name="preferredContact" value="phone" >
+                        <label for="prefPhone">Phone</label>
+                    </fieldset>
+                    <label for="email">Email Address<span class="required">*</span></label>
+                    <input type="email" name="email" id="email" autocomplete="email" placeholder="Email Address" required>
+                    <label for="phone">Phone Number <span id="phoneFormat">Format: (123)-456-7890</span><span class="required">*</span></label>
+                    <input type="tel" name="phone" id="phone" autocomplete="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone Number" required>
                     <input type="submit" name="submit" id="submit" value="Submit">
                 </form>
                 <section id="contactInfo">

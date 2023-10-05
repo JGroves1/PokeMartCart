@@ -465,15 +465,13 @@ body {
 	}
 
 	#contactUs img{
-		grid-column: 2;
-		width: 80%;
-		margin: 2em auto;
+		width: 100%;
+		margin: auto;
 		border: 0;
 		border-radius: 30px;
 	}
 
 	#contactBlurb {
-		grid-column: 2;
 		padding: 2em;
 	}
 
@@ -492,23 +490,18 @@ body {
 	}
 	
 	form {
-		grid-column: 1;
-		grid-row: 2 / 4;
-		display: flex;
-		flex-direction: column;
+		grid-column: 1 / -1;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 		padding-top: 1em;
 	}
 
 	form input {
 		border: 1px solid;
 		border-radius: 30px;
-		margin: auto;
+		/* margin: 0.5em auto; */
 		padding: 1em;
-		width: 80%;
-	}
-
-	form label {
-		padding: 1em 3em 0.5em;
+		width: 80%
 	}
 
 	form span {
@@ -526,23 +519,23 @@ body {
 		justify-content: space-between;
 		align-items: center;
 		width: 80%;
-		margin: auto;
-	}
-
-	fieldset legend {
-		padding-top: 1em;
-		padding-bottom: 0.5em;
+		/* margin: auto; */
+		/* padding: 1em; */
 	}
 
 	fieldset label {
 		margin: 0;
-		padding: 0;
 	}
 
 	fieldset input {
 		width: 2em;
 		height: 2em;
 		margin: 0;
+	}
+
+	#formFields, #messageField {
+		display: flex;
+		flex-direction: column;
 	}
 	
 	#message {
@@ -558,7 +551,7 @@ body {
 		grid-column: 1 / -1;
 		border: 0;
 		border-radius: 30px;
-		width: 40%;
+		width: 20%;
 		padding: 0.75em;
 		margin: 1em auto;
 		background-color: var(--yellow);
@@ -570,7 +563,6 @@ body {
 		display: inline-flex;
 		align-items: center;
 		margin: auto;
-		padding: 2em;
 	}
 
 	#contactInfo svg {
