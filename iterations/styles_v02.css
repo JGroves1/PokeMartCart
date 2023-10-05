@@ -76,7 +76,6 @@ table {
 	--dkBlue: #1E2A78;
 	--teal: #0A6F86;
 	--gold: #E3BA3D;
-	--dkGreen: #29A078;
 	--blueGray: #202B36;
 
 	/* STANDARD */
@@ -97,7 +96,7 @@ body {
 }
 
 /* ----- TYPOGRAPHY -----  */
-h1, h2, h3, h4, button, span, #submit {
+h1, h2, h3, h4, button, span {
 	font-family: var(--CPfont);
 }
 
@@ -304,26 +303,6 @@ body {
 			height: 100px;
 		}
 
-		.shoppingList {
-			overflow-y: auto;
-			height: 15em;
-			margin: 1em;
-		}
-
-		.shoppingList::-webkit-scrollbar {
-			background-color: var(--offWhite);
-			width: 0.5em;
-		}
-
-		.shoppingList::-webkit-scrollbar-thumb {
-			background-color: var(--ltRed);
-			border-radius: 30px;
-		}
-
-		.shoppingList::-webkit-scrollbar-track {
-			border-radius: 30px;
-		}
-
 		.itemCard {
 			display: inline-flex;
 			align-items: center;
@@ -342,24 +321,6 @@ body {
 
 		.cartItemPrice {
 			font-size: 2em;
-		}
-
-		.checkout {
-			position: sticky;
-			top: calc(100vh - 165px);
-			display: grid;
-		    align-items: center;
-			justify-items: center;
-			background-color: var(--yellow);
-			border: 0;
-			border-radius: 30px;
-			margin: 1em;
-			padding: 1em;
-		}
-
-		#checkoutBtn {
-			background-color: var(--green);
-			filter: initial;
 		}
 	
 
@@ -491,55 +452,9 @@ body {
 		flex-direction: column;
 	}
 
-	form input {
-		border: 0;
-		border-radius: 30px;
-		margin: 0.5em auto;
-		padding: 1em;
-		width: 70%;
-	}
-
-	form label {
-		margin-left: 4em;
-	}
-
-	form span {
-		color: var(--ltRed);
-	}
-
-	fieldset {
-		display: inline-flex;
-		justify-content: space-between;
-		width: 70%;
-		margin: auto;
-		padding: 1em;
-	}
-
-	fieldset label {
-		margin: 0;
-	}
-
-	fieldset input {
-		width: 2em;
-		height: 2em;
-		margin: 0;
-	}
-
-	#submit {
-		border: 0;
-		border-radius: 30px;
-		width: 40%;
-		padding: 0.75em;
-		margin: 1em auto;
-		background-color: var(--yellow);
-		font-size: 1em;
-	}
-
 	#contactInfo {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
-		align-items: center;
-		padding-right: 1.5em;
 	}
 
 	#contactInfo svg {
@@ -549,11 +464,6 @@ body {
 
 	address {
 		align-self: center;
-	}
-
-	address a {
-		text-decoration: none;
-		color: var(--dkGray);
 	}
 	
 
@@ -613,31 +523,15 @@ body.darkMode .balls, body.darkMode .meds, body.darkMode .evo {
 	filter: drop-shadow(-5px 5px 10px var(--dustyGray));
 }
 
-body.darkMode button, body.darkMode #submit {
+body.darkMode button {
 background-color: var(--gold);
 filter: drop-shadow(-3px 3px 5px var(--dustyGray));
 }
 
 body.darkMode .addedToCart{
-background-color: var(--dkGreen);
+background-color: #29a078;
 }
 
 body.darkMode .itemCard  {
 	background-color: var(--dkGray);
-}
-
-body.darkMode .checkout {
-	background-color: var(--gold);
-}
-
-body.darkMode .checkout p {
-	color: var(--dkGray);
-}
-
-body.darkMode #checkoutBtn {
-	background-color: var(--dkGreen);
-}	
-
-body.darkMode address a, body.darkMode small a {
-	color: var(--offWhite);
 }
