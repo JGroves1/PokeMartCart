@@ -8,7 +8,70 @@
         body.classList.toggle("darkMode");
     });
 
-// add to cart
+// shopping functions
+    // bag array
+        let bag = [];
+
+    // acquire the buttons
+        const btns = document.querySelectorAll(".addBtn"); 
+
+    // loopy loop through buttons
+        btns.forEach(button => {
+
+            //event listener
+            button.addEventListener("click", () => {
+            
+            // more aquiring
+            const item = button.closest(".balls, .meds, .evo");
+            const productName = item.querySelector(".productName").textContent;   
+            const price = item.querySelector(".itemPrice").textContent;
+            const img = item.querySelector(".productImg").getAttribute("src");
+
+             // create the objects/details
+            const itemDetails = {
+            name: productName,
+            price: price, 
+            img: img
+            };
+
+            // adding stuff to array
+            bag.push(itemDetails);
+
+            // show in the shopping list
+                displayShoppingList();
+                console.log(bag);
+             });
+        });
+
+    // well first we have to clear the list
+        function displayShoppingList(){
+         const bagList = document.querySelector(".shoppingList");   
+         
+         bagList.innerHTML = "";
+        
+    // now we make a loop
+        bag.forEach(item => {
+            const div = document.createElement("div");
+            div.classList.add("itemCard");
+            div.innerHTML = `
+            <div class="cartProductName">${item.name}</div>
+            <div class="cartProductImg"><img src="${item.img}"</div>
+            <div class="cartItemPrice">${item.price}</div>
+            `;
+
+            bagList.appendChild(div);
+        })
+    };
+
+    // remove items from cart ??
+
+    // bag math functions
+        // calc subtotal
+        // add tax
+        // add flat rate shipping
+        // calc total
+
+    // checkout (clears bag)
 
 // form validation
     // acquire the elements needed
@@ -18,7 +81,7 @@
     const email = document.querySelector("#email");
     const phone = document.querySelector("#phone");
     const message = document.querySelector("#message");
-
+    // and error spans
     let errorSpans = document.querySelectorAll("#contactForm .errorMessage");
     const fNameError = errorSpans[0];
     const lNameError = errorSpans[1];
@@ -39,7 +102,7 @@
         messageError.style.display = "none";
         let isValid = true;
 
-        // validate first name is at least 3 characters
+        // validate first name is at least 3 characters (cause Bob is a name)
         if(fName.value.length < 3) {
             fNameError.style.display = "block";
             isValid = false;

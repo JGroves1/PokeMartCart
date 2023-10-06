@@ -1,674 +1,702 @@
 /* JANESSA GROVES */
 
 /* CSS RESET BY MEYERWEB.COM */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+	License: none (public domain)
+	*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
 
-body {
-	line-height: 1;
-}
+	body {
+		line-height: 1;
+	}
 
-ol, ul {
-	list-style: none;
-}
+	ol, ul {
+		list-style: none;
+	}
 
-blockquote, q {
-	quotes: none;
-}
+	blockquote, q {
+		quotes: none;
+	}
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
 
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
 
 /* ----- VARIABLES ----- */
-:root{
-    /* COLORS */
-	--dkGray: #282828;
-	--ltGray: #CACECF;
-	--dustyGray: #3C535E;
-	--offWhite: #E3E7E8;
-	--dustyWhite: #F0F4F5;
+	:root{
+		/* COLORS */
+		--dkGray: #282828;
+		--ltGray: #CACECF;
+		--dustyGray: #3C535E;
+		--offWhite: #E3E7E8;
+		--dustyWhite: #F0F4F5;
 
-	/* LIGHT MODE */
-	--ltBlue: #3399FF;
-	--ltRed: #FF6666;
-	--yellow: #FFF0A5;
-	--green: #33CC99;	
-	--brightBlue: #06EDFE;
+		/* LIGHT MODE */
+		--ltBlue: #3399FF;
+		--ltRed: #FF6666;
+		--yellow: #FFF0A5;
+		--green: #33CC99;	
+		--brightBlue: #06EDFE;
 
-	/* DARK MODE */
-	--dkBlue: #1E2A78;
-	--teal: #0A6F86;
-	--gold: #E3BA3D;
-	--dkGreen: #29A078;
-	--blueGray: #202B36;
+		/* DARK MODE */
+		--dkBlue: #1E2A78;
+		--teal: #0A6F86;
+		--gold: #E3BA3D;
+		--dkGreen: #29A078;
+		--blueGray: #202B36;
 
-	/* STANDARD */
-	--white: #FFF;
-	--black: #000;
+		/* STANDARD */
+		--white: #FFF;
+		--black: #000;
 
-    /* FONTS */
-	--CPfont: 'Courier Prime', monospace;
-	--lato: 'Lato', sans-serif;
-	font-size: 16px;
-}
+		/* FONTS */
+		--CPfont: 'Courier Prime', monospace;
+		--lato: 'Lato', sans-serif;
+		font-size: 16px;
+	}
 
 /* ----- BODY/GLOBAL -----  */
-body {
-	/* commented this out so I could center my webpage, 
-	but I promise it is 1280px becuase my grid is 320*4 #math */
-	/* max-width: 1280px; */
-	background-color: var(--offWhite);
-	color: var(--dkGray);
+	body {
+		/* commented this out so I could center my webpage, 
+		but I promise it is 1280px becuase my grid is 320*4 #math */
+		/* max-width: 1280px; */
+		background-color: var(--offWhite);
+		color: var(--dkGray);
 }
 
 /* ----- TYPOGRAPHY -----  */
-h1, h2, h3, h4, button, span, #submit {
-	font-family: var(--CPfont);
-}
+	h1, h2, h3, h4, button, span, #submit {
+		font-family: var(--CPfont);
+	}
 
-h1 { 
-	font-size: 4em;
-}
+	h1 { 
+		font-size: 4em;
+	}
 
-h2 {
-	font-size: 3em;
-	text-transform: uppercase;
-	text-align: center;
-	padding: 0.1em;
-}
+	h2 {
+		font-size: 3em;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 0.1em;
+	}
 
-#shop h2, #contactUs h2 {
-	color: var(--white);
-	background-color: var(--ltRed);
-	padding: 0.25em;
-}
+	#shop h2, #contactUs h2 {
+		color: var(--white);
+		background-color: var(--ltRed);
+		padding: 0.25em;
+	}
 
-p, ul, address, label, legend, ::placeholder, small {
-	font-family: var(--lato);
-}
+	p, ul, address, label, legend, ::placeholder, small {
+		font-family: var(--lato);
+	}
 
-small {
-	font-size: 0.65em;
-}
+	small {
+		font-size: 0.65em;
+	}
 
 /* ----- GRID ----- */
-body {
-	display: grid;
-	grid-template-columns: repeat(4, 320px);
-	justify-content: center;
-}
+	body {
+		display: grid;
+		grid-template-columns: repeat(4, 320px);
+		justify-content: center;
+	}
 
-#hero {
-	grid-column: 1 / 4;
-	margin: auto;
-}
+	#hero {
+		grid-column: 1 / 4;
+		margin: auto;
+	}
 
-#sidebar {
-	grid-column: 4;
-	grid-row: 1/ 3;
-	height: 100%;
-	background-image: linear-gradient(to bottom right, var(--brightBlue), var(--ltBlue));
-}
+	#sidebar {
+		grid-column: 4;
+		grid-row: 1/ 3;
+		height: 100%;
+		background-image: linear-gradient(to bottom right, var(--brightBlue), var(--ltBlue));
+	}
 
-#wrapper {
-	grid-column: 1 / 4;
-}
+	#wrapper {
+		grid-column: 1 / 4;
+	}
 
 /* ----- SKIP LINK ----- */
-#skip{
-	position: absolute;
-	left: -10000px;
-	top: auto;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-}
+	#skip{
+		position: absolute;
+		left: -10000px;
+		top: auto;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+	}
 
-#skip:focus  {
-	position: static;
-	width: auto;
-	height: auto;
-}
+	#skip:focus  {
+		position: static;
+		width: auto;
+		height: auto;
+	}
 
 /* ----- SCREEN READER ONLY ----- */
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    clip-path: inset(50%);
-}
+	.sr-only {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+		clip-path: inset(50%);
+	}
 
 /* ----- HEADER ----- */
-
-#hero img {
-	display: block;
-	margin: auto;
-	height: 10em;
-	padding: 2em;
-}
+	#hero img {
+		display: block;
+		margin: auto;
+		height: 10em;
+		padding: 2em;
+	}
 
 	/* ----- SIDE BAR ----- */
 		/* MAKING IT STICKY */
+			#DM, nav, #shoppingBag {
+				position: sticky;
+			}
 
-		#DM, nav, #shoppingBag {
-			position: sticky;
-		}
+			#DM {
+				top: 0.5em;
+			}
 
-		#DM {
-			top: 0.5em;
-		}
+			nav {
+				top: 8em;
+			}
 
-		nav {
-			top: 8em;
-		}
-
-		#shoppingBag {
-			top: 25em;
-		}
+			#shoppingBag {
+				top: 25em;
+			}
 
     	/* ----- DARK MODE TOGGLE ----- */
-		#DM {
-			display: block;
-			text-align: center;
-		}
+			#DM {
+				display: block;
+				text-align: center;
+			}
 
-		#DM p {
-			text-transform: uppercase;
-			color: var(--white);
-			font-size: 1.25em;
-			padding-top: 1em;
-		}
+			#DM p {
+				text-transform: uppercase;
+				color: var(--white);
+				font-size: 1.25em;
+				padding-top: 1em;
+			}
 
-		#DMbtn {
-			display: inline-flex;
-			padding: 1em;
-		}
+			#DMbtn {
+				display: inline-flex;
+				padding: 1em;
+			}
 
-		#DMon, #DMoff {
-			position: relative;
-			padding: 0 1em;
-		}
+			#DMon, #DMoff {
+				position: relative;
+				padding: 0 1em;
+			}
 
-		#toggle {
-			background: var(--offWhite);
-			border-radius: 30px;
-			border: 0;
-			width: 5em;
-			height: 2.5em;
-			position: relative; 
-			cursor: pointer;
-		}
+			#toggle {
+				background: var(--offWhite);
+				border-radius: 30px;
+				border: 0;
+				width: 5em;
+				height: 2.5em;
+				position: relative; 
+				cursor: pointer;
+			}
 
-		.toggleSwitch {
-			width: 2.25em;
-			height: 2.25em;
-			border-radius: 30px; 
-			background: var(--ltBlue);
-			position: absolute;
-			top: 0.15em;
-			left: 0.2em;
-			transition: left 0.25s;
-		}
+			.toggleSwitch {
+				width: 2.25em;
+				height: 2.25em;
+				border-radius: 30px; 
+				background: var(--ltBlue);
+				position: absolute;
+				top: 0.15em;
+				left: 0.2em;
+				transition: left 0.25s;
+			}
 
 		/* ----- NAV ----- */
-		nav a {
-			display: block;
-			text-decoration: none;
-			text-transform: uppercase;
-			font-size: 1.25em;
-			text-align: center;
-			background-color: transparent;
-			color: var(--white);
-			border: 0.15em solid var(--white);
-			border-radius: 30px;
-			white-space: nowrap;
-			padding: 0.5em;
-			width: 70%;
-			margin: auto;
-			background-size: 200% 100%;	
-			background-image: linear-gradient(to right, transparent 50%, var(--white) 50%);
-			transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
-		}
+			nav a {
+				display: block;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-size: 1.25em;
+				text-align: center;
+				background-color: transparent;
+				color: var(--white);
+				border: 0.15em solid var(--white);
+				border-radius: 30px;
+				white-space: nowrap;
+				padding: 0.5em;
+				width: 70%;
+				margin: auto;
+				background-size: 200% 100%;	
+				background-image: linear-gradient(to right, transparent 50%, var(--white) 50%);
+				transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
+			}
 
-		nav a:hover {
-			color: var(--ltBlue);
-			background-color: var(--white);
-			background-position: -100% 100%;
-		}
+			nav a:hover {
+				color: var(--ltBlue);
+				background-color: var(--white);
+				background-position: -100% 100%;
+			}
 
-		nav li {
-			margin: 0.5em;
-		}
-		
+			nav li {
+				margin: 0.5em;
+			}
+			
 		/* ----- BAG ----- */
-		#shoppingBag {
-			display: grid;
-			align-items: center;
-			justify-items: center;
-		}
+			#shoppingBag {
+				display: grid;
+				align-items: center;
+				justify-items: center;
+			}
 
-		#bagHeader {
-			display: flex;
-			align-items: center;
-			border-top: 0.15em solid var(--white);
-			border-bottom: 0.15em solid var(--white);
-			padding-left: 2em;
-			padding-right: 2em;
-		}
+			#bagHeader {
+				display: flex;
+				align-items: center;
+				border-top: 0.15em solid var(--white);
+				border-bottom: 0.15em solid var(--white);
+				padding-left: 2em;
+				padding-right: 2em;
+			}
 
-		#shoppingBag h3 {
-			font-size: 2em;
-			color: var(--white);
-			justify-self: start;
-			text-transform: uppercase;
-		}
+			#shoppingBag h3 {
+				font-size: 2em;
+				color: var(--white);
+				justify-self: start;
+				text-transform: uppercase;
+			}
 
-		#shoppingBag img {
-			height: 100px;
-		}
+			/* ----- SHOPPING LIST -----  */
+				.shoppingList {
+					overflow-y: auto;
+					height: 15em;
+					margin: 1em;
+				}
 
-		.shoppingList {
-			overflow-y: auto;
-			height: 15em;
-			margin: 1em;
-		}
+				.shoppingList::-webkit-scrollbar {
+					background-color: var(--offWhite);
+					width: 0.5em;
+				}
 
-		.shoppingList::-webkit-scrollbar {
-			background-color: var(--offWhite);
-			width: 0.5em;
-		}
+				.shoppingList::-webkit-scrollbar-thumb {
+					background-color: var(--ltRed);
+					border-radius: 30px;
+				}
 
-		.shoppingList::-webkit-scrollbar-thumb {
-			background-color: var(--ltRed);
-			border-radius: 30px;
-		}
+				.shoppingList::-webkit-scrollbar-track {
+					border-radius: 30px;
+				}
 
-		.shoppingList::-webkit-scrollbar-track {
-			border-radius: 30px;
-		}
+				.itemCard {
+					display: grid;
+					grid-template-columns: 2fr 1fr;
+					align-items: center;
+					margin: auto;
+					background-color: var(--white);
+					border: 0;
+					border-radius: 30px;
+					margin: 1em;
+					padding: 0.5em;
+					width: 15em;
+				}
 
-		.itemCard {
-			display: inline-flex;
-			align-items: center;
-			margin: auto;
-			background-color: var(--white);
-			border: 0;
-			border-radius: 30px;
-			margin: 1em;
-			padding: 0.5em;
-		}
+				.cartProductName {
+					text-align: center;
+					font-size: 1.25em;
+					font-family: var(--lato);
+				}
 
-		.cartProductName {
-			text-align: center;
-			font-size: 1.5em;
-		}
+				#shoppingBag img {
+					height: 5em;
+					margin: auto;
+				}	
 
-		.cartItemPrice {
-			font-size: 2em;
-		}
+				.cartProductImg {
+					width: 5em;
+				}
+				
+				.cartItemPrice {
+					font-size: 1.5em;
+					font-family: var(--lato);
+					text-align: center;
+				}	
 
-		.checkout {
-			position: sticky;
-			top: calc(100vh - 165px);
-			display: grid;
-		    align-items: center;
-			justify-items: center;
-			background-color: var(--yellow);
-			border: 0;
-			border-radius: 30px;
-			margin: 1em;
-			padding: 1em;
-		}
+			/* ----- CHECKOUT ----- */
+				.checkout {
+					position: sticky;
+					top: calc(100vh - 165px);
+					display: grid;
+					align-items: center;
+					justify-items: center;
+					background-color: var(--yellow);
+					border: 0;
+					border-radius: 30px;
+					margin: 1em;
+					padding: 1em;
+				}
 
-		#checkoutBtn {
-			background-color: var(--green);
-			filter: initial;
-		}
-	
+				#checkoutBtn {
+					background-color: var(--green);
+					filter: initial;
+				}
 
 /* ----- MAIN ----- */
 
 	/* ----- INTRO ----- */
-	main img:first-of-type {
-		width: 100%;
-	}
-	
-	#intro h2 {
-		text-transform: none;
-		margin-top: 0.5em;
-	}
-	
-	#intro p {
-		padding: 0.5em;
-	}
+		main img:first-of-type {
+			width: 100%;
+		}
+		
+		#intro h2 {
+			text-transform: none;
+			margin-top: 0.5em;
+		}
+		
+		#intro p {
+			padding: 0.5em;
+		}
 
-	#intro p:first-of-type {
-		font-style: italic;
-		font-size: 1.25em;
-	}
+		#intro p:first-of-type {
+			font-style: italic;
+			font-size: 1.25em;
+		}
 
 	/* ----- SHOP ----- */
-	#shop {
+		#shop {
+			text-align: center;
+		}
+
+		#shop h4 {
+				font-size: 1.75em;
+				margin-bottom: 1em;
+		}
+
+		#shop p {
+			font-size: 1.5em;
+			float: left;
+			padding-top: 0.2em;
+			padding-left: 0.1em;
+		}
+
+		#pokeballs, #medicine, #evolution {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			justify-items: center;
+		}
+
+		#pokeballs h3, #medicine h3, #evolution h3 {
+			grid-column: 1 / -1;
+			padding: 0.5em 10em;
+			margin: 1em;
+			font-size: 2em;
+			border-top: 2px solid var(--ltRed);
+			border-bottom: 2px solid var(--ltRed);
+		}
+
+		.coins {
+			height: 1.5em;
+			float: left;
+			padding-top: 0.25em;
+		}
+
+		.balls, .meds, .evo {
+			background-color: var(--dustyWhite);
+			margin: auto auto 1em;
+			padding: 1em;
+			border-radius: 30px;
+			filter: drop-shadow(-5px 5px 10px var(--dkGray));
+		}
+
+		button {
+			float: right;
+			width: 60%;
+			background-color: var(--yellow);
+			border: 0;
+			border-radius: 30px;
+			padding: 0.75em;
+			margin: auto;
+			filter: drop-shadow(-3px 3px 5px var(--ltGray));
+			cursor: pointer;
+			font-size: 1em;
+		}
+
+		#shop button:hover {
+			transform: scale(1.1);
+		}
+
+		.addedToCart {
+			background-color: var(--green);	
+		}
+
+	/* ----- CONTACT ----- */
+		#contactUs {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		#contactUs h2 {
+			grid-column: 1 / -1;
+		}
+
+		#contactUs img{
+			grid-column: 2;
+			width: 80%;
+			margin: 2em auto;
+			border: 0;
+			border-radius: 30px;
+		}
+
+		/* ----- BLURB ----  */
+			#contactBlurb {
+				grid-column: 2;
+				padding: 2em;
+			}
+
+			#contactBlurb p, #contactBlurb ul{
+				padding-bottom: 1.5em;
+			}
+
+			#contactBlurb ul{
+				padding-left: 2em;
+			}
+
+			#contactBlurb li {
+				list-style: circle;
+				padding-left: 0;
+			}
+		
+		/* ----- FORM ----- */
+			form {
+				grid-column: 1;
+				grid-row: 2 / 4;
+				display: flex;
+				flex-direction: column;
+				padding-top: 1em;
+			}
+
+			form input {
+				border: 1px solid;
+				border-radius: 30px;
+				margin: auto;
+				padding: 1em;
+				width: 80%;
+			}
+
+			form label {
+				padding: 1em 3em 0.5em;
+			}
+
+			form span {
+				color: var(--ltRed);
+			}
+
+			.errorMessage {
+				display: none;
+				width: 70%;
+				margin: auto;
+			}
+
+			/* ----- FIELDSET ----- */
+				fieldset {
+					display: inline-flex;
+					justify-content: space-between;
+					align-items: center;
+					width: 80%;
+					margin: auto;
+				}
+
+				fieldset legend {
+					padding-top: 1em;
+					padding-bottom: 0.5em;
+				}
+
+				fieldset label {
+					margin: 0;
+					padding: 0;
+				}
+
+				fieldset input {
+					width: 2em;
+					height: 2em;
+					margin: 0;
+				}
+				
+				#message {
+					height: 50%;
+				}
+				
+				textarea {
+					display: flex;
+					align-items: flex-start;  
+				}
+
+			#submit {
+				grid-column: 1 / -1;
+				border: 0;
+				border-radius: 30px;
+				width: 40%;
+				padding: 0.75em;
+				margin: 1em auto;
+				background-color: var(--yellow);
+				font-size: 1em;
+			}
+
+		/* ----- OUR INFO -----  */
+			#contactInfo {
+				grid-column: 1 / -1;
+				display: inline-flex;
+				align-items: center;
+				margin: auto;
+				padding: 2em;
+			}
+
+			#contactInfo svg {
+				justify-self: end;
+				margin-right: 1em;
+			}
+
+			address {
+				align-self: center;
+			}
+
+			address a {
+				text-decoration: none;
+				color: var(--dkGray);
+			}
+		
+
+/* ----- FOOTER ----- */
+	footer {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
 		text-align: center;
 	}
 
-	.coins {
-		height: 1.5em;
-		float: left;
-		padding-top: 0.25em;
-	}
-
-	.balls, .meds, .evo {
-		background-color: var(--dustyWhite);
-		margin: auto auto 1em;
-		padding: 1em;
-		border-radius: 30px;
-		filter: drop-shadow(-5px 5px 10px var(--dkGray));
-	}
-
-	#shop h4 {
-		font-size: 1.75em;
-		margin-bottom: 1em;
-	}
-
-	#shop p {
-		font-size: 1.5em;
-		float: left;
-		padding-top: 0.2em;
-		padding-left: 0.1em;
-	}
-
-	button {
-		float: right;
-		width: 60%;
-		background-color: var(--yellow);
-		border: 0;
-		border-radius: 30px;
-		padding: 0.75em;
-		margin: auto;
-		filter: drop-shadow(-3px 3px 5px var(--ltGray));
-		cursor: pointer;
-		font-size: 1em;
-	}
-
-	#shop button:hover {
-		transform: scale(1.1);
-	}
-
-	.addedToCart {
-		background-color: var(--green);	
-	}
-
-	#pokeballs, #medicine, #evolution {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		justify-items: center;
-	}
-
-	#pokeballs h3, #medicine h3, #evolution h3 {
-		grid-column: 1 / -1;
-		padding: 0.5em 10em;
-		margin: 1em;
-		font-size: 2em;
-		border-top: 2px solid var(--ltRed);
-		border-bottom: 2px solid var(--ltRed);
-	}
-
-	/* ----- CONTACT ----- */
-	#contactUs {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-	}
-
-	#contactUs h2 {
+	#social {
 		grid-column: 1 / -1;
 	}
 
-	#contactUs img{
-		grid-column: 2;
-		width: 80%;
-		margin: 2em auto;
-		border: 0;
-		border-radius: 30px;
-	}
-
-	#contactBlurb {
-		grid-column: 2;
-		padding: 2em;
-	}
-
-	#contactBlurb p {
-		padding-bottom: 1.5em;
-	}
-
-	#contactBlurb ul{
-		padding-left: 2em;
-		padding-bottom: 1.5em;
-	}
-
-	#contactBlurb li {
-		list-style: circle;
-		padding-left: 0;
-	}
-	
-	form {
-		grid-column: 1;
-		grid-row: 2 / 4;
+	#social ul {
 		display: flex;
-		flex-direction: column;
-		padding-top: 1em;
+		justify-content: center;
 	}
 
-	form input {
-		border: 1px solid;
-		border-radius: 30px;
-		margin: auto;
-		padding: 1em;
-		width: 80%;
-	}
-
-	form label {
-		padding: 1em 3em 0.5em;
-	}
-
-	form span {
-		color: var(--ltRed);
-	}
-
-	.errorMessage {
-		display: none;
-		width: 70%;
-		margin: auto;
-	}
-
-	fieldset {
-		display: inline-flex;
-		justify-content: space-between;
-		align-items: center;
-		width: 80%;
-		margin: auto;
-	}
-
-	fieldset legend {
-		padding-top: 1em;
-		padding-bottom: 0.5em;
-	}
-
-	fieldset label {
-		margin: 0;
-		padding: 0;
-	}
-
-	fieldset input {
-		width: 2em;
-		height: 2em;
-		margin: 0;
-	}
-	
-	#message {
-		height: 90%;
-	}
-	
-	textarea {
-		display: flex;
-		align-items: flex-start;  
-	  }
-
-	#submit {
-		grid-column: 1 / -1;
-		border: 0;
-		border-radius: 30px;
-		width: 40%;
-		padding: 0.75em;
-		margin: 1em auto;
-		background-color: var(--yellow);
-		font-size: 1em;
-	}
-
-	#contactInfo {
-		grid-column: 1 / -1;
-		display: inline-flex;
-		align-items: center;
-		margin: auto;
-		padding: 2em;
-	}
-
-	#contactInfo svg {
-		justify-self: end;
-		margin-right: 1em;
-	}
-
-	address {
-		align-self: center;
-	}
-
-	address a {
+	small a {
 		text-decoration: none;
-		color: var(--dkGray);
+		color: var(--black);
 	}
-	
-
-/* ----- FOOTER ----- */
-footer {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	text-align: center;
-}
-
-#social {
-	grid-column: 1 / -1;
-}
-
-#social ul {
-	display: flex;
-	justify-content: center;
-}
-
-small a {
-	text-decoration: none;
-	color: var(--black);
-}
 
 /* ----- ADDITIONAL CLASSES ----- */
-.hidden {
-	visibility: hidden;
-}
+	.hidden {
+		visibility: hidden;
+	}
 
 /* ----- ADDITIONAL IDS ----- */
 
 /* ----- DARK MODE STYLES ----- */
-body.darkMode .toggleSwitch {
-	left: 2.5em;
-	background-color: var(--teal);
-}
+	/* ----- DM TOGGLE ----- */
+		body.darkMode .toggleSwitch {
+			left: 2.5em;
+			background-color: var(--teal);
+		}
 
-body.darkMode #toggle {
-	background-color: var(--dkGray);
-}
+		body.darkMode #toggle {
+			background-color: var(--dkGray);
+		}
 
-body.darkMode {
-	background-color: var(--dkGray);
-	color: var(--offWhite);
-}
+	/* ----- BG AND SIDEBAR ----- */
+		body.darkMode {
+			background-color: var(--dkGray);
+			color: var(--offWhite);
+		}
 
-body.darkMode #sidebar {
-	background-image: linear-gradient(to bottom right, var(--teal), var(--dkBlue));
-}
+		body.darkMode #sidebar {
+			background-image: linear-gradient(to bottom right, var(--teal), var(--dkBlue));
+		}
 
-body.darkMode nav a:hover {
-	color: var(--teal);
-}
+		body.darkMode nav a:hover {
+			color: var(--teal);
+		}	
 
-body.darkMode .balls, body.darkMode .meds, body.darkMode .evo {
-	background-color: var(--blueGray);
-	filter: drop-shadow(-5px 5px 10px var(--dustyGray));
-}
+	/* ----- BUTTONS (AS LIKE A GENERAL THING) ----- */
 
-body.darkMode button, body.darkMode #submit {
-background-color: var(--gold);
-filter: drop-shadow(-3px 3px 5px var(--dustyGray));
-}
+		body.darkMode button, body.darkMode #submit {
+		background-color: var(--gold);
+		filter: drop-shadow(-3px 3px 5px var(--dustyGray));
+		}
 
-body.darkMode .addedToCart{
-background-color: var(--dkGreen);
-}
+		body.darkMode .addedToCart{
+		background-color: var(--dkGreen);
+		}
 
-body.darkMode .itemCard  {
-	background-color: var(--dkGray);
-}
+	/* ----- SHOP -----  */
+		body.darkMode .balls, body.darkMode .meds, body.darkMode .evo {
+			background-color: var(--blueGray);
+			filter: drop-shadow(-5px 5px 10px var(--dustyGray));
+		}
+ 
+	/* ----- BAG ----- */
+		body.darkMode .itemCard  {
+			background-color: var(--dkGray);
+		}
 
-body.darkMode .checkout {
-	background-color: var(--gold);
-}
+		body.darkMode .checkout {
+			background-color: var(--gold);
+		}
 
-body.darkMode .checkout p {
-	color: var(--dkGray);
-}
+		body.darkMode .checkout p {
+			color: var(--dkGray);
+		}
 
-body.darkMode #checkoutBtn {
-	background-color: var(--dkGreen);
-}	
+		body.darkMode #checkoutBtn {
+			background-color: var(--dkGreen);
+		}	
 
-body.darkMode address a, body.darkMode small a {
-	color: var(--offWhite);
-}
+	/* ----- FORM ----- */
+		body.darkMode input {
+			background-color: var(--dustyGray);
+		}
+
+		body.darkMode ::placeholder {
+			color: var(--offWhite);
+		}
+
+	/* ----- ADDTIONAL TYPOGRAPHY ----- */
+		body.darkMode address a, body.darkMode small a {
+			color: var(--offWhite);
+		}
