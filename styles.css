@@ -361,13 +361,21 @@
 					position: sticky;
 					top: calc(100vh - 165px);
 					display: grid;
-					align-items: center;
-					justify-items: center;
 					background-color: var(--yellow);
 					border: 0;
 					border-radius: 30px;
 					margin: 1em;
 					padding: 1em;
+					font-size: 1.25em;
+				}
+
+				.checkoutCoin {
+					height: 20px;
+					padding-left: 0.5em;
+				}
+
+				.checkout span {
+					font-family: var(--lato);
 				}
 
 				#checkoutBtn {
@@ -459,7 +467,7 @@
 			transform: scale(1.1);
 		}
 
-		.addedToCart {
+		.addedToBag {
 			background-color: var(--green);	
 		}
 
