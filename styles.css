@@ -383,6 +383,9 @@
 					filter: initial;
 				}
 
+			/* ----- CHECKOUT DIALOG ----- */
+			
+
 /* ----- MAIN ----- */
 
 	/* ----- INTRO ----- */
@@ -631,7 +634,7 @@
 
 /* ----- ADDITIONAL CLASSES ----- */
 	.hidden {
-		visibility: hidden;
+		display: none;
 	}
 
 /* ----- ADDITIONAL IDS ----- */
@@ -668,7 +671,7 @@
 		filter: drop-shadow(-3px 3px 5px var(--dustyGray));
 		}
 
-		body.darkMode .addedToCart{
+		body.darkMode .addedToBag {
 		background-color: var(--dkGreen);
 		}
 

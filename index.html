@@ -28,10 +28,11 @@
             <header>
                 <img src="images/logo.png" id="logo" alt="Poké Mart's logo is a blue outline of a Pokéball">
                 <h1>Poké Mart</h1>
+            </header>
         </div>
                 <div id="sidebar">
                     <section id="DM">
-                        <p>Dark Mode</p>
+                        <h2 class="hidden">Dark Mode</h2>
                         <div id="DMbtn">
                             <!-- SVGs FROM https://tablericons.com/ --> 
                             <div id="DMoff">
@@ -45,7 +46,7 @@
                                 </svg>
                             </div>
                             <button type="button" aria-pressed="false" aria-label="darkModeToggle" id="toggle" class="darkMode">
-                                <div class="toggleSwitch"></div>
+                                <span class="toggleSwitch"></span>
                             </button>
                             <div id="DMon">
                                 <span class="sr-only">Dark Mode On</span>
@@ -78,16 +79,14 @@
                         </div>
                     </section>
                     <section class="checkout">
+                        <h3 class="sr-only">Checkout</h3>
                         <p>Subtotal: <span class="subtotal"></span></p>
                         <p>Tax: <span class="tax"></span></p>
                         <p>Shipping: <span class="shipping"></span></p>
                         <p>Total: <span class="total"></span></p>
                         <button type="button" aria-pressed="false" aria-label="checkout" id="checkoutBtn">Checkout</button>
                     </section>
-
-                    </div>
                 </div>
-        </header>
 
         <div id="wrapper">
         <main id="mainContent">
@@ -263,6 +262,7 @@
                 <h2>Contact Us</h2>
                 <img src="images/leaphereDragonite.png" alt="Dragonite wearing a mail bag and curled around an envelop in the sky">
                 <section id="contactBlurb">
+                    <h3 class="hidden">We're here to help!</h3>
                     <p>Got questions about our products or need help with an order? Our friendly Poké Mart staff is here to assist!</p>
                     <p>We want to make sure you get the most out of your Poké Mart shopping experience. If you need assistance or have and concerns, there are a few easy ways to get in touch:</p>
                     <ul>
@@ -297,10 +297,11 @@
                     <input type="tel" name="phone" id="phone" placeholder="Phone Number">
                     <label for="message">Message<span class="required">*</span></label>
                     <span class="errorMessage">Please tell us how we can help.</span>
-                    <input type="textarea" name="message" id="message" >
+                    <input type="text" name="message" id="message" >
                     <input type="submit" name="submit" id="submit" value="Submit">
                 </form>
                 <section id="contactInfo">
+                    <h3 class="sr-only">Our Contact Information</h3>
                     <!-- SVGs FROM https://tablericons.com/ (AGAIN) -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -333,7 +334,7 @@
 
         <footer>
             <section id="social">
-                <h2 class="sr-only">Social Media Links</h2> 
+                <h3 class="sr-only">Social Media Links</h3> 
                 <!-- SVGs FROM https://tablericons.com/ -->
                 <ul>
                     <li>

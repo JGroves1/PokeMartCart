@@ -10,78 +10,78 @@
 
 // shopping functions
     // bag array
-    let bag = [];
+        let bag = [];
 
     // acquire the buttons
-    const btns = document.querySelectorAll(".addBtn"); 
+        const btns = document.querySelectorAll(".addBtn"); 
 
     // loopy loop through buttons
-    btns.forEach(button => {
+        btns.forEach(button => {
 
-        //event listener
-        button.addEventListener("click", () => {
+            //event listener
+                button.addEventListener("click", () => {
             
-        // more aquiring
-        const item = button.closest(".balls, .meds, .evo");
-        const productName = item.querySelector(".productName").textContent;   
-        const price = item.querySelector(".itemPrice").textContent;
-        const img = item.querySelector(".productImg").getAttribute("src");
+            // more aquiring
+                const item = button.closest(".balls, .meds, .evo");
+                const productName = item.querySelector(".productName").textContent;   
+                const price = item.querySelector(".itemPrice").textContent;
+                const img = item.querySelector(".productImg").getAttribute("src");
 
-        // create the objects/details
-        const itemDetails = {
-            name: productName,
-            price: price, 
-            img: img
-        };
+             // create the objects/details
+                const itemDetails = {
+                name: productName,
+                price: price, 
+                img: img
+                };
 
-        // adding stuff to array
-        bag.push(itemDetails);
+            // adding stuff to array
+                bag.push(itemDetails);
 
-        // add to subtotal
-        subtotal += parseInt(itemDetails.price);
+            // add to subtotal
+                subtotal += parseInt(itemDetails.price);
 
-        // temp style the add to bag btn
-        button.classList.add("addedToBag");
-        button.innerHTML = "Added!";
+            // temp style the add to bag btn
+                button.classList.add("addedToBag");
+                button.innerHTML = "Added!";
 
-        // the temp style timer
-        setTimeout(() => {
-            button.classList.remove("addedToBag");
-            button.innerHTML = "Add to Bag";
-            }, 1500);
+                // the temp timer
+                setTimeout(() => {
+                    button.classList.remove("addedToBag");
+                    button.innerHTML = "Add to Bag";
+                    }, 1500);
                 
-        // show in the shopping list
-            displayShoppingList();
-            console.log(bag);
-        });
+            // show in the shopping list
+                displayShoppingList();
+                console.log(bag);
+            });
             
-    });
+        });
 
     // well first we have to clear the list
         function displayShoppingList(){
-            const bagList = document.querySelector(".shoppingList");   
+         const bagList = document.querySelector(".shoppingList");   
          
-            bagList.innerHTML = "";
+         bagList.innerHTML = "";
         
-            // now we make a loop
+        // now we make a loop
             bag.forEach(item => {
                 const div = document.createElement("div");
                 div.classList.add("itemCard");
                 div.innerHTML = `
                     <div class="cartProductName">${item.name}</div>
-                    <dv class="cartProductImg"><img src="${item.img}"></div>
-                    <divi class="cartItemPrice">${item.price}</div>
-                    `;
+                    <div class="cartProductImg"><img src="${item.img}"></div>
+                    <div class="cartItemPrice">${item.price}</div>
+                `;
 
                 bagList.appendChild(div);
             });
 
-            // update subtotal
+        // update subtotal
             subtotalP.innerHTML = `
             <img src="images/PokeCoin.png" class="checkoutCoin"> ${subtotal}
             `;
-            
-            // update total
+        
+        // update total
             updateTotal();
         };
 
@@ -89,19 +89,18 @@
 
     // bag math
         // declare the rates
-        const taxRate = 0.065;
-        const shipping = 50;
-        let tax = 0; 
-        let subtotal = 0;
-        let total = 0;
+            const taxRate = 0.065;
+            const shipping = 50;
+            let tax = 0; 
+            let subtotal = 0;
+            let total = 0;
 
         // outputPs (even though they are spans)
-        const subtotalP = document.querySelector(".subtotal");
-        const taxP = document.querySelector(".tax");
-        const shippingP = document.querySelector(".shipping");
-        const totalP = document.querySelector(".total");
-        
-        // now the function
+            const subtotalP = document.querySelector(".subtotal");
+            const taxP = document.querySelector(".tax");
+            const shippingP = document.querySelector(".shipping");
+            const totalP = document.querySelector(".total");
+               
         function updateTotal() {
             // first calc tax since subtotal is already taken care of
             let tax = subtotal * taxRate;
@@ -132,30 +131,23 @@
         checkoutBtn.addEventListener("click", checkout);
 
         function checkout() {
-            // acquiring elements so I can create the alert
-            let totalP = document.querySelector(".total");
-            let checkoutCoin = totalP.querySelector("img");
-            checkoutCoin.remove();
-            let total = totalP.innerHTML.trim();
-            console.log(total);
-
-            // alert/kthnxbai
-            alert(`Thank you for your order, trainer! You spent ${total} Poké Coins on some top quality products!`); 
-
             // clear cart
             bag = [];
 
             // clear DOM
-            displayShoppingList();           
-            
-            // reset the math fields
-            subtotal = 0; 
+            displayShoppingList();
 
-            // reset the outputPs 
+            // reset the math fields
+            subtotal = 0;
+
+            // reset the outputPs
             subtotalP.textContent = subtotal;
             taxP.textContent = tax;
             shippingP.innerHTML = "0";
-            totalP.innerHTML = "0";
+            totalP.textContent = total;
+
+            // alert/kthnxbai
+            alert(`Thank you for your order, trainer! You spent ${total.toFixed(0)} on some top quality products!`);    
         }
 
 // form validation
@@ -231,6 +223,7 @@
     }
 
     // format the phone number after the user types it for a lil better UX
+
         // acquire the phone input
         const phoneInput = document.querySelector("#phone");
 
