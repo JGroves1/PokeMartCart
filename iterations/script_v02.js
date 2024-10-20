@@ -228,7 +228,7 @@
             isValid = false;
             e.preventDefault();
         }
-    };
+    }
 
     // format the phone number after the user types it for a lil better UX
         // acquire the phone input
